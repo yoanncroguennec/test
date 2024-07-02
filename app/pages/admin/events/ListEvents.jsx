@@ -28,7 +28,7 @@ export default function ListEvents() {
   return (
     <div>
       <Link href='../add/events'>
-        <Typography variant='h5'>Ajout</Typography>
+        <Typography variant='h5'>Ajout event</Typography>
       </Link>
       ListEvents
       {allEvents.map((yy) => (
