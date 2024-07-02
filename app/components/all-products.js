@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import DataTable from "@/app/components/dataTable";
+import { Box, Typography } from "@mui/material";
 
 const cols = ["ID", "TITLE", "DESCRIPTION", "PRICE"];
 
@@ -22,6 +23,16 @@ const AllProducts = () => {
     }
     getAllProducts();
   }, []);
+
+  return (
+    <Box>
+      {rows.map((tr, i) => (
+        <Box>
+          <Typography variant='h5'>{tr?.title}</Typography>
+        </Box>
+      ))}
+    </Box>
+  );
   return <DataTable cols={cols} rows={rows} />;
 };
 

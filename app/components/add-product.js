@@ -41,7 +41,7 @@ const AddProduct = () => {
   return (
     <div>
       <BreadCrumb lists={breadCrumb} />
-      <h4 className="mb-2">Add New Product</h4>
+      <h4 className="mb-2">Add New Prmoduct</h4>
       <div className="mb-2">
         <div className="row">
           <div className="col-md-6">

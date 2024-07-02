@@ -1,21 +1,28 @@
 "use client";
+
 import React from "react";
-import Link from "next/link";
 import AllProducts from "./components/all-products";
+import { Box, Typography } from '@mui/material';
+import Link from "next/link";
+import ListEvents from "./pages/admin/events/ListEvents";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>
-      <div className="d-flex mb-2">
-        <Link className="btn btn-primary" href="../add/">
-          Add Product
+    <Box>
+      <Box>
+        <Link href='../add/'>
+          <Typography variant='h5'>Ajout</Typography>
         </Link>
-      </div>
-      <div>
+      </Box>
+      <Box>
         <AllProducts />
-      </div>
-    </div>
+        <hr />
+        <hr />
+        <hr />
+        <hr />
+        <ListEvents />
+      </Box>
+    </Box>
   );
-};
+}
 
-export default Home;
