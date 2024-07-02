@@ -32,7 +32,7 @@ export default function ListEvents() {
       </Link>
       ListEvents
       {allEvents.map((yy) => (
-        <Box>
+        <Box key={yy}>
           <Typography variant='h5'>{yy.event}</Typography>
         </Box>
       ))}

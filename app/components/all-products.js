@@ -27,7 +27,7 @@ const AllProducts = () => {
   return (
     <Box>
       {rows.map((tr, i) => (
-        <Box>
+        <Box key={i}>
           <Typography variant='h5'>{tr?.title}</Typography>
         </Box>
       ))}
